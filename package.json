@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "mocha --recursive ./test/**/*.space.js",
     "build:web": "rollup src/section01/index.js --file output/section01/web-bundle.js --format iife --name 'MBundle'",
     "build:node": "rollup src/section01/index.js --file output/section01/node-bundle.js --format cjs",
     "build:both": "rollup src/section01/index.js --file output/section01/both-bundle.js --format umd --name 'MBundle'",
@@ -13,7 +14,8 @@
     "build:s05": "rollup -c rollup.config.s05.js",
     "build:s06": "rollup -c rollup.config.s06.js",
     "build:s07": "rollup -c rollup.config.s07.js",
-    "build:s08": "rollup -c rollup.config.s08.js"
+    "build:s08": "rollup -c rollup.config.s08.js",
+    "build:pls": "rollup -c rollup.config.pls.js"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +28,7 @@
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
     "@rollup/plugin-typescript": "^8.2.1",
+    "mocha": "^9.0.1",
     "rollup": "^2.52.6",
     "rollup-plugin-terser": "^7.0.2",
     "tslib": "^2.3.0",
