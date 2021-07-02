@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>section06 web版本测试</title>
+  </head>
+  <body>
+    <script>
+      if (!window.supportsDynamicImport) {
+        const systemJsLoaderTag = document.createElement("script");
+        systemJsLoaderTag.src =
+          "https://unpkg.com/systemjs@2.0.0/dist/s.min.js";
+        systemJsLoaderTag.addEventListener("load", function () {
+          System.import("../../../output/section06/index.js").then(({ log }) =>
+            log("hello")
+          );
+        });
+        document.head.appendChild(systemJsLoaderTag);
+      }
+    </script>
+  </body>
+</html>

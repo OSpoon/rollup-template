@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sources":["../../src/section06/index.js"],"sourcesContent":["export const log = (s) =>\r\n  console.log(\r\n    \"%c [输出]: \",\r\n    \"color: #bf2c9f; background: pink; font-size: 13px;\",\r\n    s\r\n  );\r\n"],"names":["s","console","log"],"mappings":"gFAAoBA,GAClBC,QAAQC,IACN,YACA,qDACAF"}
